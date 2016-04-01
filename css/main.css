@@ -31,6 +31,15 @@ svg {
   cursor: pointer;
 }
 
-.lines path {
+.lines {
   stroke-dasharray: 0, 480;
+  transition: all .5s ease;
+}
+
+.draw {
+  stroke-dasharray: 480, 480;
+}
+
+.orange {
+  color: orange;
 }
