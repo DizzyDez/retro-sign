@@ -40,6 +40,38 @@ svg {
   stroke-dasharray: 480, 480;
 }
 
-.orange {
-  color: orange;
+.orange path:nth-child(1) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: .5s;
+}
+
+.orange path:nth-child(2) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: .75s;
+}
+
+.orange path:nth-child(3) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: 1s;
+}
+
+.orange path:nth-child(4) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: 1s;
+}
+
+.orange path:nth-child(5) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: .75s;
+}
+
+.orange path:nth-child(6) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: .5s;
 }
