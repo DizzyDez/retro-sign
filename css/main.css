@@ -29,6 +29,7 @@ svg {
 
 .btn {
   cursor: pointer;
+  transition: all 1s;
 }
 
 .lines {
@@ -37,7 +38,37 @@ svg {
 }
 
 .draw {
-  stroke-dasharray: 480, 480;
+  animation: draw .5s ease;
+}
+
+.lined path {
+  animation: draw 1s forwards;
+}
+
+.btn:active {
+  transform: scale(1, 1);
+  transition: all .5s ease;
+  fill: #f60;
+  transition: all 1s;
+}
+
+.btn:hover path:nth-child(2) {
+  fill: #f60;
+  transition: all 1s;
+}
+
+.btn:active {
+  cursor: none;
+  transition: all 1s;
+}
+
+.engage {
+  fill: currentColor;
+  transition: all 1s;
+}
+
+.lined path {
+  animation: liner 1s forwards;
 }
 
 .orange path:nth-child(1) {
@@ -74,4 +105,16 @@ svg {
   fill: #f60;
   transition: all 1s;
   transition-delay: .5s;
+}
+
+@keyframes draw {
+
+  0% {
+
+    stroke-dasharray: 0, 480;
+  }
+
+  100% {
+    stroke-dasharray: 480, 480;
+  }
 }
